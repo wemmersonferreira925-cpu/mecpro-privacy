@@ -92,6 +92,13 @@
       color: #6b7280;
       text-align: center;
     }
+    .delete-box {
+      background: #2a2b2e;
+      border-left: 4px solid #F59E0B;
+      padding: 16px;
+      border-radius: 8px;
+      margin: 16px 0;
+    }
   </style>
 </head>
 <body>
@@ -112,6 +119,8 @@
       <li><strong>Nome e endereço de e-mail</strong> — coletados no momento do cadastro para criação e gerenciamento da conta.</li>
       <li><strong>Dados de pagamento</strong> — processados para a assinatura do plano premium. Não armazenamos dados de cartão diretamente; o processamento é realizado pela plataforma Google Play.</li>
       <li><strong>Dados de uso</strong> — informações sobre como você utiliza o aplicativo, como funcionalidades acessadas e relatórios gerados.</li>
+      <li><strong>Fotos enviadas para diagnóstico</strong> — quando você utiliza a funcionalidade opcional de Diagnóstico por Foto, as imagens são processadas pela API da Anthropic para análise.</li>
+      <li><strong>Mensagens enviadas ao Assistente IA</strong> — quando você utiliza o assistente, suas perguntas são processadas pela API da Anthropic.</li>
     </ul>
 
     <h2>2. Como Usamos suas Informações</h2>
@@ -128,20 +137,20 @@
     <p>O MecPro utiliza os seguintes serviços de terceiros, que possuem suas próprias políticas de privacidade:</p>
     <ul>
       <li><strong>Supabase</strong> — armazenamento seguro dos dados dos usuários. <a href="https://supabase.com/privacy" target="_blank">Ver política</a></li>
-      <li><strong>Anthropic (Claude AI)</strong> — processamento das consultas ao assistente de inteligência artificial. <a href="https://www.anthropic.com/privacy" target="_blank">Ver política</a></li>
+      <li><strong>Anthropic (Claude AI)</strong> — processamento das consultas ao assistente de inteligência artificial e Diagnóstico por Foto. <a href="https://www.anthropic.com/privacy" target="_blank">Ver política</a></li>
       <li><strong>Google OAuth</strong> — autenticação via conta Google. <a href="https://policies.google.com/privacy" target="_blank">Ver política</a></li>
       <li><strong>SendGrid (Twilio)</strong> — envio de e-mails transacionais. <a href="https://www.twilio.com/en-us/legal/privacy" target="_blank">Ver política</a></li>
       <li><strong>Google Play Billing</strong> — processamento de pagamentos e assinaturas. <a href="https://policies.google.com/privacy" target="_blank">Ver política</a></li>
     </ul>
 
     <h2>4. Compartilhamento de Dados</h2>
-    <p>Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros, exceto quando necessário para a prestação dos serviços descritos nesta política ou quando exigido por lei.</p>
+    <p>Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros, exceto quando necessário para a prestação dos serviços descritos nesta política ou quando exigido por lei. As fotos enviadas ao Diagnóstico por Foto e mensagens ao Assistente IA são compartilhadas com a Anthropic exclusivamente para processamento, conforme descrito acima.</p>
 
     <h2>5. Segurança dos Dados</h2>
-    <p>Adotamos medidas técnicas e organizacionais adequadas para proteger suas informações contra acesso não autorizado, alteração, divulgação ou destruição. Os dados são armazenados em servidores seguros com criptografia em trânsito e em repouso.</p>
+    <p>Adotamos medidas técnicas e organizacionais adequadas para proteger suas informações contra acesso não autorizado, alteração, divulgação ou destruição. Os dados são armazenados em servidores seguros com criptografia em trânsito (HTTPS/TLS) e em repouso.</p>
 
     <h2>6. Retenção de Dados</h2>
-    <p>Seus dados são mantidos enquanto sua conta estiver ativa. Caso você solicite a exclusão da conta, seus dados serão removidos dos nossos sistemas em até 30 dias, exceto quando a retenção for exigida por obrigações legais.</p>
+    <p>Seus dados são mantidos enquanto sua conta estiver ativa. Caso você solicite a exclusão da conta, seus dados serão removidos dos nossos sistemas em até 30 dias úteis, exceto quando a retenção for exigida por obrigações legais (por exemplo, dados financeiros mantidos por até 5 anos por exigência fiscal).</p>
 
     <h2>7. Direitos do Usuário</h2>
     <p>Você tem o direito de:</p>
@@ -151,7 +160,13 @@
       <li>Solicitar a exclusão da sua conta e dados</li>
       <li>Revogar o consentimento para uso dos seus dados</li>
     </ul>
-    <p>Para exercer esses direitos, entre em contato pelo e-mail abaixo.</p>
+
+    <div class="delete-box">
+      <p>📄 <strong>Exclusão de conta:</strong> Para solicitar a exclusão da sua conta e de todos os dados associados, acesse a página dedicada:</p>
+      <p style="margin-top:8px;">
+        <a href="./excluir-conta.html"><strong>→ Solicitar exclusão da minha conta MecPro</strong></a>
+      </p>
+    </div>
 
     <h2>8. Dados de Menores</h2>
     <p>O MecPro não é destinado a menores de 18 anos e não coleta intencionalmente dados de crianças ou adolescentes.</p>
@@ -163,7 +178,7 @@
     <p>Em caso de dúvidas sobre esta Política de Privacidade, entre em contato:</p>
     <ul>
       <li><strong>Desenvolvedor:</strong> Wemmerson França</li>
-      <li><strong>E-mail:</strong> <a href="mailto:wnimportsbr925@gmail.com">wnimportsbr925@gmail.com</a></li>
+      <li><strong>E-mail:</strong> <a href="mailto:mecpro.app1@gmail.com">mecpro.app1@gmail.com</a></li>
       <li><strong>Aplicativo:</strong> MecPro – Diagnóstico para Mecânicos</li>
     </ul>
 
